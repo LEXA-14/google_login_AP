@@ -115,5 +115,15 @@ dependencies {
     implementation(libs.converter.moshi)
 //photo
     implementation(libs.coil.compose)
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0")) // Usa la última versión
+    implementation("com.google.firebase:firebase-auth")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+// credential manager
+    implementation("androidx.credentials:credentials:1.2.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.2.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.0")
+
 }
 
