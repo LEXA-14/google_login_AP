@@ -1,6 +1,16 @@
 package com.example.google_login_ap.presentacion.Auth
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.google_login_ap.domain.auth.repository.AuthRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
@@ -12,6 +22,7 @@ class AuthViewModel @Inject constructor(
 
     init { checkSession() }
 
+    @OptIn(ExperimentalStdlibApi::class)
     private fun checkSession() {
         authRepository.getCurrentUser()?.let { user ->
             _state.update { it.copy(user = user) }
