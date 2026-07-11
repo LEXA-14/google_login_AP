@@ -11,7 +11,7 @@ plugins {
 android {
     namespace = "com.example.google_login_ap"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
