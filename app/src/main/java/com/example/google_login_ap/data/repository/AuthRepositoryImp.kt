@@ -1,6 +1,7 @@
 package com.example.google_login_ap.data.repository
 
 import android.content.Context
+import com.example.google_login_ap.R
 import androidx.credentials.CredentialManager
 import androidx.credentials.CustomCredential
 import androidx.credentials.GetCredentialRequest
@@ -24,7 +25,7 @@ class AuthRepositoryImpl @Inject constructor(
             // 1. Configurar opción de Google ID (Pega aquí tu Web Client ID)
             val googleIdOption = GetGoogleIdOption.Builder()
                 .setFilterByAuthorizedAccounts(false)
-                .setServerClientId("TU_WEB_CLIENT_ID_AQUI")
+                .setServerClientId(context.getString(R.string.web_client_id))
                 .setAutoSelectEnabled(true)
                 .build()
 
