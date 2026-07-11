@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609335599189",
+    "project_id": "login-cf184",
+    "storage_bucket": "login-cf184.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609335599189:android:c71e420734ca3e2649f4dc",
+        "android_client_info": {
+          "package_name": "com.example.google_login_ap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfHMntS_QKP_21hPrGULcYls0tZmDJBxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

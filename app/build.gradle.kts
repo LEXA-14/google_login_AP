@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.serialization)
+    //id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -125,5 +127,6 @@ dependencies {
     implementation("androidx.credentials:credentials-play-services-auth:1.2.0")
     implementation("com.google.android.libraries.identity.googleid:googleid:1.1.0")
 
+    implementation(platform("com.google.firebase:firebase-bom:34.16.0"))
 }
 
